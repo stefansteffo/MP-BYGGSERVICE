@@ -17,10 +17,10 @@
 }
 
 .hero-title-image {
-    width: 450px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 
@@ -590,6 +590,15 @@ p {
 /* ---------- EXTRA LITEN MOBIL ---------- */
 
 @media (max-width: 500px) {
+
+@media (max-width: 600px) {
+    .hero-title-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
     .navigation {
         gap: 12px;
