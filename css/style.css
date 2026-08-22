@@ -8,21 +8,21 @@
 
 .hero-title-row {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 .hero-title-row h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    flex: 1;
 }
 
 .hero-title-image {
-    width: 450px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
+    flex-shrink: 1;
 }
+
 
 
 
@@ -592,14 +592,14 @@ p {
 @media (max-width: 500px) {
 
 
-    @media (max-width: 600px) {
+/*    @media (max-width: 600px) {
     .hero-title-image {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
 }
-
+*/
 
     .navigation {
         gap: 12px;
