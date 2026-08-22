@@ -591,14 +591,15 @@ p {
 
 @media (max-width: 500px) {
 
-@media (max-width: 600px) {
+
+/*    @media (max-width: 600px) {
     .hero-title-image {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
 }
-
+*/
 
     .navigation {
         gap: 12px;
