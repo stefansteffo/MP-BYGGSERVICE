@@ -1,0 +1,612 @@
+/* =========================================
+   MP Byggservice
+   Gemensam CSS för hela webbplatsen
+   ========================================= */
+
+
+/* ---------- GRUNDINSTÄLLNINGAR ---------- */
+
+.hero-title-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-title-row h1 {
+    flex: 1;
+}
+
+.hero-title-image {
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #202020;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* ---------- RUBRIKER ---------- */
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 78px);
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.eyebrow {
+    color: #c77922;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.eyebrow.light {
+    color: #e6ad69;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    background: #151515;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    min-height: 82px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d48a35;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px 0;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: #ffffff;
+    border-bottom-color: #d48a35;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15, 15, 15, 0.98),
+            rgba(15, 15, 15, 0.82),
+            rgba(15, 15, 15, 0.60)
+        ),
+        #242424;
+}
+
+.hero-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 650px;
+    color: #dddddd;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- KNAPPAR ---------- */
+
+.button {
+    display: inline-block;
+
+    background: #d48a35;
+    color: #111111;
+
+    border: 2px solid #d48a35;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background: #e49a44;
+    border-color: #e49a44;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: transparent;
+    color: #ffffff;
+    border-color: #777777;
+}
+
+.button-secondary:hover {
+    background: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+
+/* ---------- VANLIGA SEKTIONER ---------- */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-light {
+    background: #f5f3ef;
+}
+
+.section-dark {
+    background: #181818;
+    color: #ffffff;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.section-heading > p:last-child {
+    color: #666666;
+    font-size: 18px;
+}
+
+
+/* ---------- TVÅ KOLUMNER ---------- */
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.large-text {
+    font-size: 18px;
+    color: #555555;
+}
+
+
+/* ---------- KORT ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+}
+
+.card-number {
+    color: #c77922;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.card p {
+    color: #666666;
+}
+
+
+/* ---------- CHECK LIST ---------- */
+
+.check-list > div {
+    border-top: 1px solid #444444;
+    padding: 25px 0;
+}
+
+.check-list strong {
+    font-size: 20px;
+}
+
+.check-list p {
+    color: #bbbbbb;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+/* ---------- SIDHUVUD ---------- */
+
+.page-header {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.page-header h1 {
+    max-width: 850px;
+}
+
+
+/* ---------- TJÄNSTESIDA ---------- */
+
+.service-grid {
+    border-top: 1px solid #dddddd;
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.service-item > span {
+    color: #c77922;
+    font-weight: 700;
+}
+
+.service-item h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    max-width: 700px;
+    color: #666666;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta {
+    background: #e7e2da;
+    padding: 90px 0;
+}
+
+.cta .container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.cta p:not(.eyebrow) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+
+/* ---------- KONTAKT ---------- */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+}
+
+.contact-info > p {
+    color: #666666;
+}
+
+.contact-details {
+    margin-top: 45px;
+}
+
+.contact-details > div {
+    padding: 18px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.contact-details span {
+    display: block;
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.contact-details strong {
+    font-size: 17px;
+}
+
+
+/* ---------- FORMULÄR ---------- */
+
+.form-box {
+    background: #f5f3ef;
+    padding: 45px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    padding: 14px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #c77922;
+}
+
+.form-button {
+    width: 100%;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    background: #111111;
+    color: #aaaaaa;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+}
+
+.footer-logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MOBIL OCH SURFPLATTA
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    /* Header */
+
+    .header-container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .navigation a {
+        padding: 18px 0;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+
+    /* Sektioner */
+
+    .section {
+        padding: 70px 0;
+    }
+
+
+    /* Kolumner */
+
+    .two-columns,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* Kort */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Tjänster */
+
+    .service-item {
+        grid-template-columns: 50px 1fr;
+    }
+
+
+    /* Formulär */
+
+    .form-box {
+        padding: 25px;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ---------- EXTRA LITEN MOBIL ---------- */
+
+@media (max-width: 500px) {
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 13px;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+}
